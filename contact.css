@@ -1,0 +1,380 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+/*-----navBar-----*/
+nav{
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+     top: 0;
+  left: 0;
+z-index: 1000;
+    justify-content: space-between;
+    background-color: #053C36;
+    border: 2px solid #1B4C47;
+    
+}
+.logo{
+    width: 25%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 136px;
+    height: 65px;
+}
+.navmain{
+    position: relative;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+.navmain a{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.navmain a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    background:   #FAD000;
+    transition: width,.4s;
+}
+.navmain a:hover::after{
+
+    width: 100%;
+    cursor: pointer;
+}
+.navmain a:hover{
+    color: #FAD000;
+}
+
+.navmain button{
+        padding: 15px 35px;
+        border-radius: 20px 1px;
+        background:transparent;
+        color: white;
+         border: 1px solid #DCB36A;
+}
+.navmain button:hover{
+    background-color:#DCB36A ;
+    cursor: pointer;
+}
+/*----Section----1------*/
+.contact{
+    width: 100%;
+    margin-top: 15vh;
+    overflow: hidden;
+    background-color: #FFF8F0;
+}
+h1.section-title {
+    margin-top: 40px;
+   font-size: 60px;
+    text-align: center;
+    color: #053C36;
+}
+.containt{
+    margin-top: 50px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    gap: 120px;
+   
+}
+.leaf{
+    width: 20%;
+}
+.leaf img{
+    width: 500px;
+        margin-top: -298px;
+    margin-left: -167px;
+    rotate: -97deg;
+
+}
+.lside{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #053C36;
+   
+}
+
+.dive{
+    border: 1.5px solid grey;
+    height: 40vh;
+}
+
+.rside{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+
+}
+.rleaf{
+    width: 20%;
+}
+.rleaf img{
+    width: 500px;
+         margin-top: -245px;
+    margin-left: -52px;
+    rotate: -190deg;
+}
+/*banner-----*/
+.banner{
+    width: 100%;
+    height: 35vh;
+    background-color: #053C36;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    gap: 10px;
+}
+.fa-solid{
+    color: white;
+}
+.con h4{
+    font-size: 20px;
+    color: #DCB36A;
+}
+.con p{
+    font-size: 12px;
+    color: white;
+}
+.con  h6{
+    font-size: 15px;
+    color: white;
+}
+/*------FORM-sec  */
+
+.contact-section {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  background-color: #fdf5ec;
+  overflow: hidden;
+}
+
+/* Decorative leaf image */
+.contact-section::after {
+  content: '';
+  position: absolute;
+    top: -170px;
+    right: -163px;
+  width: 800px;
+  height: 100%;
+  background: url('leaf-element.png') no-repeat center right;
+  background-size: contain;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contact-form {
+  background-color: #003c38;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #f5c86b;
+  width: 350px;
+  z-index: 1;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.privacy-check {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.privacy-check input {
+  margin-right: 0.5rem;
+}
+
+.contact-form button {
+  background-color: #ddb15c;
+  color: #003c38;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #f5c86b;
+}
+
+.contact-info {
+  max-width: 500px;
+  z-index: 1;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: #003c38;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/*Footer */
+
+.banner2{
+    width: 100%;
+    background-color: #062621;
+
+}
+.banner2 img{
+    width: 100%;
+}
+/*----Footer-----*/
+.footer {
+  background-color: #062621;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer .logo2 {
+  height: 60px;
+}
+
+.tagline {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.location-links {
+  margin: 15px 0;
+}
+
+.location-links a {
+  color: #f8c56a;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.nav-links {
+  width: 35%;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav-links a:hover{
+  color: #d8a760;
+}
+
+.social-icons {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.social-icons a{
+  color: white;
+  font-size: 18px;
+}
+.social-icons a:hover{
+  color: #d8a760;
+}
+
+
+
+.policy-links {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.policy-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #aaa;
+}
